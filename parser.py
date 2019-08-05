@@ -1,7 +1,6 @@
 import vcf
 
 from biothings.utils.dataload import dict_sweep, unlist, value_convert_to_number
-from utils.hgvs import get_hgvs_from_vcf
 
 CHROM_VALID_VALUES = [str(_chr) for _chr in list(range(1, 23)) + ['X', 'Y', 'MT']]
 
