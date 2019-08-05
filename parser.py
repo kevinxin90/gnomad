@@ -1,6 +1,5 @@
 import vcf
 
-from biothings.utils.dataload import dict_sweep, unlist, value_convert_to_number
 
 CHROM_VALID_VALUES = [str(_chr) for _chr in list(range(1, 23)) + ['X', 'Y', 'MT']]
 
@@ -85,8 +84,7 @@ def _map_line_to_json(item, keys):
                             one_snp_json['gnomad_exome'][_start.lower()][_key.lower()] = info[_key][i]
                         else:
                             one_snp_json['gnomad_exome'][_start.lower()][_key.lower()] = info[_key]
-        obj = (dict_sweep(unlist(value_convert_to_number(one_snp_json, skipped_keys=['chrom'])), [None]))
-        yield obj
+        yield one_snp_json
 
 
 def load_data(input_file):
