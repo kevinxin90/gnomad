@@ -7,7 +7,7 @@
         "url" : "https://phewascatalog.org/"
     },
     "dumper" : {
-        "data_url": "http://localhost:8080/dataupload/mysrc/gnomad.exomes.r2.1.1.sites.1.vcf.bgz',
+        "data_url": "http://localhost:8080/dataupload/mysrc/gnomad.exomes.r2.1.1.sites.1.vcf.bgz",
         "uncompress" : true,
         "release" : "version:get_release"
     },
